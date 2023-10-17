@@ -12,9 +12,11 @@ class _RowcolumnState extends State<Rowcolumn> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(mainAxisAlignment: MainAxisAlignment.center,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   width: 100,
@@ -28,14 +30,20 @@ class _RowcolumnState extends State<Rowcolumn> {
                 )
               ],
             ),
-            Row(mainAxisAlignment: MainAxisAlignment.center,
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.black,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(width: 100, height: 100, color: Colors.tealAccent),
                 Container(
                   width: 100,
                   height: 100,
                   color: Colors.cyan,
-                )
+                ),
               ],
             )
           ],

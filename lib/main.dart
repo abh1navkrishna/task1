@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:task1/chess.dart';
+import 'package:task1/containers.dart';
 import 'package:task1/rowcolumn.dart';
 import 'package:task1/task1d.dart';
+import 'package:task1/task2.dart';
+import 'package:task1/variables.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Chessboard()
+      home: Task2()
     );
   }
 }
