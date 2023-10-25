@@ -11,7 +11,7 @@ class _Task2State extends State<Task2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepOrangeAccent[100],
+      backgroundColor: Colors.pink[100],
       body: Column(
         children: [
           Row(
@@ -19,7 +19,7 @@ class _Task2State extends State<Task2> {
               Container(
                 height: 260,
                 width: 392,
-                color: Colors.deepOrangeAccent[100],
+                color: Colors.pink[100],
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -51,7 +51,7 @@ class _Task2State extends State<Task2> {
                 ),
                 child: Container(
                   width: 360,
-                  height: 505,
+                  height: 510,
                   color: Colors.white,
                   child: Column(
                     children: [
@@ -150,9 +150,9 @@ class _Task2State extends State<Task2> {
                               width: 200,
                               height: 50,
                               decoration: BoxDecoration(
-                                border:
-                                    Border.all(color: Colors.black, width: 1.0),borderRadius: BorderRadius.circular(10)
-                              ),
+                                  border: Border.all(
+                                      color: Colors.black, width: 1.0),
+                                  borderRadius: BorderRadius.circular(10)),
                               child: Center(
                                   child: Text('Done',
                                       style: TextStyle(

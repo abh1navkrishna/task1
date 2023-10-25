@@ -17,30 +17,33 @@ class _Task3State extends State<Task3> {
           Container(width: 400, height: 61, color: Colors.pink),
           Column(
             children: [
-              Container( child: Container(
-                width: 350,
-                height: 641,
-                color: Colors.grey[400],
-                child: Column(mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(width: 50,height: 50,color: Colors.black,),
-                        Container(width: 50,height: 50,color: Colors.white,),
-                      ],
-                    ),
-                    Row(mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(width: 50,height: 50,color: Colors.white,),
-                        Container(width: 50,height: 50,color: Colors.black,),
-                      ],
-                    ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Container( child: Container(
+                  width: 350,
+                  height: 641,
+                  color: Colors.grey[400],
+                  child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Row(mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(width: 50,height: 50,color: Colors.black,),
+                          Container(width: 50,height: 50,color: Colors.white,),
+                        ],
+                      ),
+                      Row(mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(width: 50,height: 50,color: Colors.white,),
+                          Container(width: 50,height: 50,color: Colors.black,),
+                        ],
+                      ),
 
 
-                  ],
-                ),
+                    ],
+                  ),
 
-              ),),
+                ),),
+              ),
             ],
           ),
 
