@@ -17,28 +17,31 @@ class _Task5State extends State<Task5> {
         child: Padding(
           padding: const EdgeInsets.only(left: 0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                width: 350,
-                height: 50,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    color: Colors.grey[200]),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      icon: Padding(
-                        padding: const EdgeInsets.only(left: 20),
-                        child: Icon(
-                          Icons.search,
-                          color: Colors.grey[400],
+              Center(
+                child: Container(
+                  width: 350,
+                  height: 50,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: Colors.grey[200]),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        icon: Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Icon(
+                            Icons.search,
+                            color: Colors.grey[400],
+                          ),
                         ),
-                      ),
-                      hintText: 'Search for task',
-                      hintStyle: TextStyle(color: Colors.grey[400])),
+                        hintText: 'Search for task',
+                        hintStyle: TextStyle(color: Colors.grey[400])),
+                  ),
                 ),
               ),
+              //    ------------------------searchbar-----------------------------------------
               Padding(
                 padding: const EdgeInsets.only(top: 30),
                 child: Row(
@@ -72,8 +75,8 @@ class _Task5State extends State<Task5> {
                 ),
               ),
 
-              //------------------------------------dates----------------------------------------------------------------------------
-
+              // //------------------------------------dates----------------------------------------------------------------------------
+              //
               Padding(
                 padding: const EdgeInsets.only(left: 20, top: 15),
                 child: Row(
@@ -229,8 +232,8 @@ class _Task5State extends State<Task5> {
                 ),
               ),
 
-              //--------------------------------------------------today------------------------------------------------------------------
-
+              // //--------------------------------------------------today------------------------------------------------------------------
+              //
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: Row(
@@ -257,174 +260,25 @@ class _Task5State extends State<Task5> {
                 ),
               ),
 
-              //------------------------------------------------------------------------------------------------------------------------
-
-              Expanded(
-                child: Container(
-                  width: 400,
-                  height: 70,
-                  color: Colors.blue,
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Container(
-                      width: double.infinity,
-                      height: 120,
-                      color: Colors.teal,
-                      child: Row(
-                        children: [
-                          Text(
-                            '07:00',
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w900),
-                          ),
-                          Container(
-                            width: 200,
-                            height: 120,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                color: Colors.deepPurple[50]),
-                            child: Column(
-                              children: [
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(left: 20, top: 15),
-                                  child: Row(
-                                    children: [
-                                      Text('Reading Books     ',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w900,
-                                              fontSize: 18)),
-                                      Icon(Icons.more_vert)
-                                    ],
-                                  ),
-                                ),
-                                Text(
-                                  '07:00 - 07:15               ',
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.w900,
-                                      color: Colors.grey[600]),
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(left: 20, top: 17),
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        width: 65,
-                                        height: 25,
-                                        child: Center(
-                                            child: Text('Urgent',
-                                                style: TextStyle(
-                                                    fontWeight: FontWeight.w500,
-                                                    color: Colors.deepPurple))),
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(5),
-                                            color: Colors.deepPurple[100]),
-                                      ),
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(left: 10),
-                                        child: Container(
-                                          width: 65,
-                                          height: 25,
-                                          child: Center(
-                                              child: Text('Home',
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                      color:
-                                                          Colors.deepPurple))),
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(5),
-                                              color: Colors.deepPurple[100]),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: 200,
-                            height: 120,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                color: Colors.deepPurple[50]),
-                            child: Column(
-                              children: [
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(left: 20, top: 15),
-                                  child: Row(
-                                    children: [
-                                      Text('Reading Books     ',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w900,
-                                              fontSize: 18)),
-                                      Icon(Icons.more_vert)
-                                    ],
-                                  ),
-                                ),
-                                Text(
-                                  '07:00 - 07:15               ',
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.w900,
-                                      color: Colors.grey[600]),
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(left: 20, top: 17),
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        width: 65,
-                                        height: 25,
-                                        child: Center(
-                                            child: Text('Urgent',
-                                                style: TextStyle(
-                                                    fontWeight: FontWeight.w500,
-                                                    color: Colors.deepPurple))),
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(5),
-                                            color: Colors.deepPurple[100]),
-                                      ),
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(left: 10),
-                                        child: Container(
-                                          width: 65,
-                                          height: 25,
-                                          child: Center(
-                                              child: Text('Home',
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                      color:
-                                                          Colors.deepPurple))),
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(5),
-                                              color: Colors.deepPurple[100]),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
+              // //------------------------------------------------------------------------------------------------------------------------
+              Container(
+                height: 100,
+                color: Colors.teal,
+                child: ListView(
+                  children: [
+                    Container(
+                      height: 80,
+                      width: 100,
+                      color: Colors.red,
                     ),
-                  ),
+                    Container(
+                      height: 80,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ],
                 ),
-              ),
+              )
             ],
           ),
         ),
