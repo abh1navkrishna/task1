@@ -262,22 +262,36 @@ class _Task5State extends State<Task5> {
 
               // //------------------------------------------------------------------------------------------------------------------------
               Container(
-                height: 100,
-                color: Colors.teal,
-                child: ListView(
-                  children: [
-                    Container(
-                      height: 80,
-                      width: 100,
-                      color: Colors.red,
-                    ),
-                    Container(
-                      height: 80,
-                      width: 100,
-                      color: Colors.white,
-                    ),
-                  ],
-                ),
+                height: 150,
+                color: Colors.red,
+                width: double.infinity,
+                child: Row(children: [
+                  Container(
+                    height: 150,
+                    width: 100,
+                    color: Colors.grey,
+                  ),
+                  Expanded(
+                      child: ListView(scrollDirection: Axis.horizontal,
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 100,
+                        color: Colors.white,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        color: Colors.green,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 100,
+                        color: Colors.pink,
+                      )
+                    ],
+                  ))
+                ]),
               )
             ],
           ),

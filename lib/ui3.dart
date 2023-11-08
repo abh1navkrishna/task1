@@ -35,7 +35,7 @@ class _Wui3State extends State<Wui3> {
 
       //===================================================================appbar======================================================
 
-      body: Column(
+      body: ListView(
         children: [
           Container(
             child: Stack(
