@@ -4,11 +4,14 @@ import 'package:task1/containers.dart';
 import 'package:task1/datepicker.dart';
 import 'package:task1/drawer.dart';
 import 'package:task1/imagepicker.dart';
+import 'package:task1/loginpage.dart';
 import 'package:task1/navigationbar.dart';
 import 'package:task1/overflow.dart';
 import 'package:task1/radiodropdown.dart';
+import 'package:task1/register.dart';
 import 'package:task1/rowcolumn.dart';
 import 'package:task1/scroll.dart';
+import 'package:task1/shared_preferences.dart';
 import 'package:task1/task1d.dart';
 import 'package:task1/task2.dart';
 import 'package:task1/task3.dart';
@@ -47,7 +50,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Validn()
+      home: Reg()
     );
   }
 }

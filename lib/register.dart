@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:task1/task3.dart';
+import 'package:task1/loginpage.dart';
+import 'package:task1/ui3.dart';
 
-class Validn extends StatefulWidget {
-  const Validn({super.key});
+class Reg extends StatefulWidget {
+  const Reg({super.key});
 
   @override
-  State<Validn> createState() => _ValidnState();
+  State<Reg> createState() => _RegState();
 }
 
-class _ValidnState extends State<Validn> {
+class _RegState extends State<Reg> {
   final formkey = GlobalKey<FormState>();
 
   var user = TextEditingController();
@@ -19,6 +20,9 @@ class _ValidnState extends State<Validn> {
     final spr = await SharedPreferences.getInstance();
     spr.setString('Username', user.text);
     spr.setString('Password', pass.text);
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return Login();
+    },));
 
     var username = spr.getString('Username');
     print(username);
@@ -55,16 +59,26 @@ class _ValidnState extends State<Validn> {
                 onPressed: () {
                   reg();
 
-                  if (formkey.currentState!.validate()){
-                    showDialog(context: context, builder: (builder){
-                      return AlertDialog(title: Text('Alert'),
-                      content: Text('Save Uesrname and Password'),
-                      actions: [TextButton(onPressed: (){
-                        Navigator.pop(context);
-                      }, child: Text('OK'),),],);
-                    },);
-
-                  };
+                  if (formkey.currentState!.validate()) {
+                    showDialog(
+                      context: context,
+                      builder: (builder) {
+                        return AlertDialog(
+                          title: Text('Alert'),
+                          content: Text('Save Uesrname and Password'),
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: Text('OK'),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  }
+                  ;
                 },
                 child: const Text('submit'),
               ),
