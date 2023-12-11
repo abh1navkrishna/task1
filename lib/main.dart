@@ -32,6 +32,7 @@ import 'package:task1/form.dart';
 import 'package:task1/stack.dart';
 import 'package:task1/womenbag.dart';
 import 'package:task1/drawer.dart';
+import 'package:task1/tabbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Reg()
+      home: Date()
     );
   }
 }

@@ -10,7 +10,7 @@ class Validn extends StatefulWidget {
 }
 
 class _ValidnState extends State<Validn> {
-  final formkey = GlobalKey<FormState>();
+  k
 
   var user = TextEditingController();
   var pass = TextEditingController();
